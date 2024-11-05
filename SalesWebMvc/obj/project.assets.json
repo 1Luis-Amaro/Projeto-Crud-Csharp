@@ -12733,23 +12733,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\luis.amaro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Documents\\C#\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
+      "projectUniqueName": "C:\\Users\\luis.amaro\\Documents\\Projeto-C-\\SalesWebMvc\\SalesWebMvc.csproj",
       "projectName": "SalesWebMvc",
-      "projectPath": "C:\\Users\\Dell\\Documents\\C#\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Documents\\C#\\SalesWebMvc\\SalesWebMvc\\obj\\",
+      "projectPath": "C:\\Users\\luis.amaro\\Documents\\Projeto-C-\\SalesWebMvc\\SalesWebMvc.csproj",
+      "packagesPath": "C:\\Users\\luis.amaro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luis.amaro\\Documents\\Projeto-C-\\SalesWebMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luis.amaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
