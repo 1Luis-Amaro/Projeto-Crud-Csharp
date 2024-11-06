@@ -81,3 +81,4 @@ C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Sal
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.genruntimeconfig.cache
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.CopyComplete
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.cshtml.g.cs
+C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.cshtml.g.cs
