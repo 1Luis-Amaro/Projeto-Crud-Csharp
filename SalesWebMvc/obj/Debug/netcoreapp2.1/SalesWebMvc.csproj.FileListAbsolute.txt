@@ -48,7 +48,6 @@ C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\bin\Debug\netcoreapp2.1\Sal
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.pdb
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.Views.dll
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.Views.pdb
-C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.AssemblyInfoInputs.cache
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.AssemblyInfo.cs
@@ -84,3 +83,5 @@ C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Raz
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.cshtml.g.cs
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Delete.cshtml.g.cs
 C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Details.cshtml.g.cs
+C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Edit.cshtml.g.cs
+C:\Users\luis.amaro\Documents\Projeto-C-\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
