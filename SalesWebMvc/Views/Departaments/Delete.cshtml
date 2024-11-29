@@ -1,27 +1,42 @@
 ﻿@model SalesWebMvc.Models.Departament
 
-@{
-    ViewData["Title"] = "Delete";
+@{ <!-- Inicia um bloco de código Razor, onde variáveis podem ser definidas ou lógica executada. -->
+    ViewData["Title"] = "Delete"; <!-- Define o título da página como "Delete". Este valor será usado na renderização do cabeçalho da página. -->
 }
 
-<h2>Delete</h2>
+<h2>Delete</h2>  <!-- Exibe o título principal da página como "Delete", indicando que a ação principal é a exclusão. -->
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Are you sure you want to delete this?</h3>  <!-- Exibe a pergunta de confirmação ao usuário se ele deseja excluir o item. -->
+
 <div>
-    <h4>Departament</h4>
-    <hr />
+    <!-- Inicia uma divisão (bloco) que contém o formulário de exclusão. -->
+
+    <h4>Departament</h4>  <!-- Exibe o subtítulo "Departament", indicando que o conteúdo da página é sobre um departamento. -->
+
+    <hr />  <!-- Exibe uma linha horizontal para separar visualmente as seções da página. -->
+
     <dl class="dl-horizontal">
+        <!-- Inicia uma lista de definições no estilo horizontal, ideal para mostrar pares de termo e definição. -->
+
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            <!-- Define o termo (nome da propriedade que será exibida) na lista de definições. -->
+            @Html.DisplayNameFor(model => model.Name)  <!-- Exibe o nome legível da propriedade 'Name' do modelo 'Departament'. -->
         </dt>
+
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            <!-- Define a descrição correspondente ao termo, mostrando o valor da propriedade 'Name'. -->
+            @Html.DisplayFor(model => model.Name)  <!-- Exibe o valor real da propriedade 'Name' do modelo. -->
         </dd>
-    </dl>
-    
+
+    </dl>  <!-- Fecha a lista de definições. -->
+
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+        <!-- Inicia um formulário HTML com a ação 'Delete', que irá chamar a ação 'Delete' do controlador para excluir o departamento. -->
+        <input type="hidden" asp-for="Id" />  <!-- Cria um campo oculto contendo o 'Id' do departamento, que será enviado ao servidor quando o formulário for submetido. -->
+        <input type="submit" value="Delete" class="btn btn-default" />  <!-- Cria um botão de submissão com o valor "Delete", permitindo ao usuário confirmar a exclusão. -->
+        |  <!-- Exibe uma barra de separação visual entre os botões. -->
+
+        <a asp-action="Index">Back to List</a>  <!-- Cria um link para redirecionar o usuário de volta à lista de departamentos. -->
+    </form>  <!-- Fecha o formulário HTML. -->
+
+</div>  <!-- Fecha a divisão que contém o conteúdo da exclusão. -->

@@ -1,35 +1,55 @@
-﻿@model IEnumerable<SalesWebMvc.Models.Departament>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@model IEnumerable<SalesWebMvc.Models.Departament>  
+@{ <!-- Inicia um bloco de código Razor, onde variáveis podem ser definidas e lógica executada. -->
+    ViewData["Title"] = "Index"; <!-- Define o título da página como "Index". Este valor será usado no título da página. -->
 }
 
-<h2>Index</h2>
+<h2>Index</h2>  <!-- Exibe o título principal da página como "Index", indicando que é a página principal da lista de departamentos. -->
 
 <p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <!-- Inicia uma seção de parágrafo. -->
+
+    <a asp-action="Create">Create New</a>  <!-- Cria um link para redirecionar para a ação 'Create' no controlador, permitindo criar um novo departamento. -->
+
+</p>  <!-- Fecha a seção do parágrafo. -->
+
 <table class="table">
+    <!-- Inicia uma tabela com a classe 'table' para estilização. -->
+
     <thead>
+        <!-- Inicia o cabeçalho da tabela. -->
         <tr>
+            <!-- Inicia uma linha na tabela. -->
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                <!-- Define a célula de cabeçalho para a coluna de nome do departamento. -->
+                @Html.DisplayNameFor(model => model.Name)  <!-- Exibe o nome do campo 'Name' do modelo como título da coluna. -->
             </th>
-            <th></th>
+            <th></th>  <!-- Define uma coluna vazia para os links de ação (editar, visualizar e excluir). -->
         </tr>
-    </thead>
+    </thead>  <!-- Fecha o cabeçalho da tabela. -->
+
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <!-- Inicia o corpo da tabela, onde as linhas de dados serão exibidas. -->
+
+        @foreach (var item in Model)
+        {<!-- Inicia um loop que percorre cada item da coleção de departamentos no modelo. -->
+            <tr>
+                <!-- Inicia uma linha de dados para cada departamento. -->
+                <td>
+                    <!-- Define a célula para o nome do departamento. -->
+                    @Html.DisplayFor(modelItem => item.Name)  <!-- Exibe o nome do departamento. -->
+                </td>
+                <td>
+                    <!-- Define a célula para os links de ação (editar, visualizar e excluir). -->
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>  <!-- Cria um link para a ação 'Edit', passando o ID do departamento como parâmetro. -->
+                    |  <!-- Separa os links por uma barra vertical. -->
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>  <!-- Cria um link para a ação 'Details', passando o ID do departamento como parâmetro. -->
+                    |  <!-- Separa os links por uma barra vertical. -->
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>  <!-- Cria um link para a ação 'Delete', passando o ID do departamento como parâmetro. -->
+                </td>
+            </tr>
+ <!-- Fecha a linha de dados para o departamento. -->
+        }  <!-- Fecha o loop de exibição de departamentos. -->
+
+    </tbody>  <!-- Fecha o corpo da tabela. -->
+
+</table>  <!-- Fecha a tabela. -->

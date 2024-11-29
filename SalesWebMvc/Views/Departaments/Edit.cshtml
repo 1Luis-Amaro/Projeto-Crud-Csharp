@@ -1,34 +1,59 @@
-﻿@model SalesWebMvc.Models.Departament
+﻿@model SalesWebMvc.Models.Departament  
 
-@{
-    ViewData["Title"] = "Edit";
+@{ <!-- Inicia um bloco de código Razor, onde variáveis podem ser definidas e lógica executada. -->
+    ViewData["Title"] = "Edit"; <!-- Define o título da página como "Edit". Este valor será usado no título da página. -->
 }
 
-<h2>Edit</h2>
+<h2>Edit</h2>  <!-- Exibe o título principal da página como "Edit", indicando que a página permite editar informações. -->
 
-<h4>Departament</h4>
-<hr />
+<h4>Departament</h4>  <!-- Exibe o subtítulo "Departament", indicando que a edição se refere a um departamento. -->
+
+<hr />  <!-- Exibe uma linha horizontal para separar visualmente as seções da página. -->
+
 <div class="row">
+    <!-- Inicia uma linha de uma grid (estilo de layout). -->
+
     <div class="col-md-4">
+        <!-- Define uma coluna com largura de 4 partes da grid do Bootstrap, que será usada para o formulário de edição. -->
+
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
+            <!-- Inicia um formulário que enviará dados para a ação 'Edit' do controlador. -->
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>  <!-- Exibe mensagens de erro relacionadas ao modelo, caso existam, com a classe de erro 'text-danger'. -->
+
+            <input type="hidden" asp-for="Id" />  <!-- Cria um campo oculto para armazenar o 'Id' do departamento, necessário para identificar o departamento a ser editado. -->
+
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <!-- Inicia um grupo de formulário para organizar o campo de entrada. -->
+
+                <label asp-for="Name" class="control-label"></label>  <!-- Cria uma etiqueta para o campo 'Name', vinculada à propriedade 'Name' do modelo. -->
+
+                <input asp-for="Name" class="form-control" />  <!-- Cria um campo de entrada para editar o nome do departamento, vinculando-o à propriedade 'Name'. -->
+
+                <span asp-validation-for="Name" class="text-danger"></span>  <!-- Exibe mensagens de erro de validação para o campo 'Name', caso existam. -->
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <!-- Inicia um grupo de formulário para o botão de envio. -->
+
+                <input type="submit" value="Save" class="btn btn-default" />  <!-- Cria um botão de envio com o texto "Save", para salvar as alterações feitas no departamento. -->
             </div>
-        </form>
-    </div>
-</div>
+
+        </form>  <!-- Fecha o formulário. -->
+
+    </div>  <!-- Fecha a coluna do formulário. -->
+
+</div>  <!-- Fecha a linha da grid. -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Inicia uma divisão para o link de navegação. -->
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <a asp-action="Index">Back to List</a>  <!-- Cria um link para redirecionar o usuário de volta à lista de departamentos. -->
+
+</div>  <!-- Fecha a divisão com o link de navegação. -->
+
+@section Scripts {  <!-- Inicia a seção de scripts, que é utilizada para incluir scripts adicionais na página. -->
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}  <!-- Renderiza um script de validação parcial, necessário para realizar validações de entrada no lado do cliente. -->
+
+}  <!-- Fecha a seção de scripts. -->

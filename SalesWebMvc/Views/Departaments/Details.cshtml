@@ -1,24 +1,41 @@
-﻿@model SalesWebMvc.Models.Departament
+﻿@model SalesWebMvc.Models.Departament 
 
-@{
-    ViewData["Title"] = "Details";
+@{ <!-- Inicia um bloco de código Razor, onde variáveis podem ser definidas ou lógica executada. -->
+    ViewData["Title"] = "Details"; <!-- Define o título da página como "Details". Este valor será usado na renderização do cabeçalho da página. -->
 }
 
-<h2>Details</h2>
+<h2>Details</h2>  <!-- Exibe o título principal da página como "Details", indicando que a página exibe detalhes de um departamento. -->
 
 <div>
-    <h4>Departament</h4>
-    <hr />
+    <!-- Inicia uma divisão (bloco) que contém os detalhes do departamento. -->
+
+    <h4>Departament</h4>  <!-- Exibe o subtítulo "Departament", indicando que o conteúdo da página é sobre um departamento. -->
+
+    <hr />  <!-- Exibe uma linha horizontal para separar visualmente as seções da página. -->
+
     <dl class="dl-horizontal">
+        <!-- Inicia uma lista de definições no estilo horizontal, ideal para mostrar pares de termo e definição. -->
+
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            <!-- Define o termo (nome da propriedade que será exibida) na lista de definições. -->
+            @Html.DisplayNameFor(model => model.Name)  <!-- Exibe o nome legível da propriedade 'Name' do modelo 'Departament'. -->
         </dt>
+
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            <!-- Define a descrição correspondente ao termo, mostrando o valor da propriedade 'Name'. -->
+            @Html.DisplayFor(model => model.Name)  <!-- Exibe o valor real da propriedade 'Name' do modelo. -->
         </dd>
-    </dl>
-</div>
+
+    </dl>  <!-- Fecha a lista de definições. -->
+
+</div>  <!-- Fecha a divisão que contém os detalhes do departamento. -->
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Inicia uma nova divisão para os links de navegação. -->
+
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>  <!-- Cria um link que redireciona para a ação 'Edit' no controlador, passando o 'Id' do departamento. -->
+    |  <!-- Exibe uma barra de separação visual entre os links. -->
+
+    <a asp-action="Index">Back to List</a>  <!-- Cria um link para redirecionar o usuário de volta à lista de departamentos. -->
+
+</div>  <!-- Fecha a divisão que contém os links de navegação. -->

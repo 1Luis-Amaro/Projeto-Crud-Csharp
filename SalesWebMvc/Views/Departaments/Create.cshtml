@@ -1,22 +1,30 @@
-﻿@model SalesWebMvc.Models.Departament
+﻿@model SalesWebMvc.Models.Departament // Define o modelo que será usado nesta view.
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create"; // Define o título da página.
 }
 
-<h2>Create</h2>
+<h2>Create</h2> <!-- Título principal da página. -->
 
-<h4>Departament</h4>
+<h4>Departament</h4> <!-- Subtítulo que indica o contexto da criação. -->
 <hr />
+
+<!-- Seção para o formulário de criação -->
 <div class="row">
     <div class="col-md-4">
+        <!-- Formulário que envia os dados para o método "Create" no controller. -->
         <form asp-action="Create">
+            <!-- Exibe mensagens de validação resumidas, caso haja erros. -->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Campo para entrada do nome do departamento -->
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label"></label> <!-- Rótulo associado ao campo "Name" do modelo. -->
+                <input asp-for="Name" class="form-control" /> <!-- Campo de entrada para o nome do departamento. -->
+                <span asp-validation-for="Name" class="text-danger"></span> <!-- Exibe mensagens de validação específicas para "Name". -->
             </div>
+
+            <!-- Botão para enviar o formulário -->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
@@ -24,10 +32,13 @@
     </div>
 </div>
 
+<!-- Link para voltar à lista de departamentos -->
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List</a> <!-- Redireciona para o método "Index" no controller. -->
 </div>
 
+<!-- Seção de scripts para validação no cliente -->
 @section Scripts {
+    <!-- Inclui o script parcial para validação (geralmente usado com data annotations). -->
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
